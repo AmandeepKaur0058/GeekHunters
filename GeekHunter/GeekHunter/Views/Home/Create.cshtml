@@ -1,0 +1,40 @@
+﻿@using GeekHunter.Controllers;
+@using GeekHunter.Models
+@model CreateCandidateViewModel
+@{
+    ViewBag.Title = "Register Candidate";
+}
+<div id="page">
+    <div id="title">
+        <h2>@ViewBag.Heading</h2>
+    </div>
+    <div id="pageBody">
+        <div class="form-group">
+            @using (Html.BeginForm(Model.Action, "Home"))
+            {
+                <div class="col-md-3 col-md-offset-4">
+                    <div id="create">
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.FirstName)
+
+                            @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.FirstName)
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.LastName)
+
+                            @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.LastName)
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.SkillId)
+                            @Html.DropDownListFor(x => x.SkillId, Model.SkillListItems, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.SkillId)
+                        </div>
+                        <input type="submit" class="btn btn-info" value="Save" />
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

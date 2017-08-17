@@ -1,0 +1,93 @@
+﻿@import url('bootstrap.css');
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+#createTbl {
+    width: 900px;
+    padding-top: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 40px;
+    background-color: bisque;
+    color: crimson;
+    text-align: left;
+    
+}
+#indexPage {
+    color: indianred;
+
+        
+}
+#thead {
+    font-family: sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    color: crimson;
+}
+#row {
+    font-size: small;
+    color: black;
+}
+#title {
+    color: crimson;
+    text-align: center;
+    font-weight: bolder;
+}
+#page {
+
+    width: auto;
+
+
+    height: auto;
+}
+#pageBody {
+    background-color: lightgrey;
+    height: 500px;
+}
+#search {
+    padding-top: 30px;
+    width: 300px;
+}
+#filter {
+    padding-top: -2px;
+    padding-left: 90px;
+}
+#create {
+    padding-top: 10px;
+}
+
+.searchBox {
+    padding-top: 10px;
+}
+#navbar {
+    color: white;
+    background-color: crimson;
+}
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+.navbar-inverse .navbar-nav>li > a { color: white;}
+#thsingle {
+    text-align: center;
+}
