@@ -1,27 +1,28 @@
 # Geek Hunters
 
-You are working in IT-recruiting agency "Geek Hunters". Your employer asked you to implement Geek Registration System
-(GRS). 
+Application And Packages
 
-Using GRS a recruitment agent should be able to:
-  - register a new candidate:
-     - first name / last name
-     - select technologies candidate has experience in from the predefined list 
-  - view all candidates
-  - filter candidates by technology
+Developed in: C# Asp.net Mvc 
+Packages Used: 
+
+Dapper for database accessing.
+Autofac for dependency injection
+System.Data.SQLite for SQL Reading
+Bootstrap for Website.
+
+How to run website:
+
+1: Build website and run in Internet explorer or google chrome
+ 
+Testing
+
+Testing uses integration testing.
+
+How to run geek hunter testing.
+1: Copy the GeekHunter.sqlite database from location : GeekHunter\GeekHunter
+2: Past the database in file path: C:\Temp
+3: Run visual studio with administrator and run unit tests.
+
+Note. You do not need to copy database to c:\temp to make the website work. This is only for running testing project.
 
 
-Another developer has partially designed and implemented a
-SQLite DB for this project - GeekHunters.sqlite. Feel free to modify a structure to
-your needs.
-
-Please fork the project and commit your source code (please do not archive it :) ).
-
-You are free to use any technology and frameworks you need -
-Console Application / Desktop / Web. However, if you decide to go with third
-party package manager or dev tool - don't forget to mention them in the
-README.md of your fork.
-
-Good luck!
-
-P.S: And unit tests! We love unit tests!
